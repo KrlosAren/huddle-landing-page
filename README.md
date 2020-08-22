@@ -12,7 +12,7 @@ Thanks for checking out this front-end coding challenge.
 
 ## Building your project
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+Feel free to clone this repo and run into your computer, i used PUG and STYLUS to build.
 
 ## Giving feedback
 
