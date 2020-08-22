@@ -48,7 +48,7 @@ main .content p {
   padding: 20px 0;
   font-size: 16px;
   line-height: 1.5em;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.02em;
   color: #fff;
   font-family: 'Open-Sans', sans-serif;
 }
@@ -70,7 +70,7 @@ main .content button:hover {
 }
 footer {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 footer .rrss {
   width: 100%;
