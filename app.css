@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 50px;
+  background-color: #674baf;
+  background-image: url(./src/assets/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: end;
+}
+header img {
+  width: 10%;
+}
+main {
+  display: flex;
+}
+main .mockups {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .mockups img {
+  width: 100%;
+}
+main .content {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+}
+main .content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+main .content p {
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.06em;
+  color: #fff;
+  font-family: 'Open-Sans', sans-serif;
+}
+main .content button {
+  border: none;
+  border-radius: 30px;
+  font-weight: 400;
+  padding: 13px 60px;
+  margin-top: 30px;
+  box-shadow: 3px 4px 6px 6px rgba(0,0,0,0.2);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #674baf;
+  background-color: #fff;
+}
+main .content button:hover {
+  cursor: pointer;
+}
+footer {
+  width: 100%;
+  padding-top: 30px;
+}
+footer .rrss {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+footer .rrss svg {
+  margin: 0 10px;
+}
+footer .rrss svg:hover {
+  cursor: pointer;
+}
+footer .code {
+  text-align: center;
+  color: #fff;
+  font-family: 'Open-Sans', sans-serif;
+}
+footer .code p {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  font-family: 'Poppins', sans-serif;
+}
+footer .code a {
+  text-decoration: none;
+  color: #13c4a3;
+}
+footer .code a:hover {
+  text-decoration: underline;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px), only screen and (max-width: 320px) {
+  .main {
+    padding: 10px;
+    margin: 0 auto;
+    height: auto;
+    background-image: url(./src/assets/bg-mobile.svg);
+  }
+  header img {
+    width: 40%;
+  }
+  main {
+    display: block;
+    text-align: center;
+  }
+  main .mockups,
+  main .content {
+    padding: 20px;
+  }
+  main .mockups h1,
+  main .content h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.6em;
+    letter-spacing: 0.05em;
+  }
+  main .mockups p,
+  main .content p {
+    font-size: 14px;
+    line-height: 1.8em;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+  }
+  main .mockups button,
+  main .content button {
+    padding: 13px 80px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .rrss {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+  }
+  footer .rrss svg {
+    width: 30px;
+  }
+  footer .code p {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=src/styles/main.css.map */
