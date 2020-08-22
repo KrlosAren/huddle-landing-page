@@ -1,0 +1,6 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.prettier": true
+  },
+  "eslint.validate": ["javascript"]
+ }

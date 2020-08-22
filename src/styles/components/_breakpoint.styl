@@ -1,0 +1,38 @@
+minMax-media = {
+    min_first: "320px",
+    max_first: "479px",
+    min_second: "480px",
+    max_second: "567px",
+    min_third: "568px",
+    max_third: "767px",
+    min_tablet : "768px",
+    max_tablet : "1023px",
+    min_desktop: "1024px",
+    max_desktop: "1200px",
+    min_desktop_extended: "1201px"
+}
+
+only-screen = "only screen and (min-width: "
+max-width = ") and (max-width: "
+only-screen-min = "only screen and (max-width: "
+only-screen-end = ")"
+only-screen-end-comma = "), "
+
+media_queries = {
+  mobile_all    : only-screen + minMax-media[min_first] + max-width + minMax-media[max_third] + only-screen-end-comma + only-screen-min + minMax-media[min_first] + only-screen-end,
+  mobile-first     : only-screen + minMax-media[min_first] + max-width + minMax-media[max_first] + only-screen-end-comma + only-screen-min + minMax-media[min_first] + only-screen-end,
+  mobile-second     : only-screen + minMax-media[min_second] + max-width + minMax-media[max_second] + only-screen-end,
+  mobile-third     : only-screen + minMax-media[min_third] + max-width + minMax-media[max_third] + only-screen-end,
+  tablet     : only-screen + minMax-media[min_tablet] + max-width + minMax-media[max_tablet] + only-screen-end,
+  desktop   : only-screen + minMax-media[min_desktop] + max-width + minMax-media[max_desktop] + only-screen-end,
+  desktop_extended: only-screen + minMax-media[min_desktop_extended] + only-screen-end
+}
+
+/// Mixin responsivo
+responsive(breakpoints)
+    conditions = ()
+    for breakpoint in breakpoints
+        push(conditions, media_queries[breakpoint])
+    conditions = join(", ", conditions)
+    @media conditions
+        {block}
