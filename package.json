@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "build":"webpack --config ./webpack.config.js --mode production"
+    "build": "webpack --config ./webpack.config.js --mode production"
   },
   "keywords": [],
   "author": "Carlos Lopez Zavarce <krlosaren@gmail.com>",
@@ -33,5 +33,13 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.10.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrlosAren/huddle-landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KrlosAren/huddle-landing-page/issues"
+  },
+  "homepage": "https://github.com/KrlosAren/huddle-landing-page#readme"
 }
