@@ -1,16 +1,16 @@
 html(lang="en")
   head
     meta(charset="UTF-8")
-    link(rel='icon' type='image/png' sizes='32x32' href='../src/assets/favicon-32x32.png')
+    link(rel='icon' type='image/png' sizes='32x32' href=require('../src/assets/favicon-32x32.png').default)
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Frontend Mentor | Huddle landing page with single introductory section
   body
     div.main
       header
-        img(src='../src/assets/logo.svg')
+        img(src=require('../src/assets/logo.svg').default)
       main
         div.mockups
-          img(src='../src/assets/illustration-mockups.svg')
+          img(src=require('../src/assets/illustration-mockups.svg').default)
         div.content
           h1
             | Build The Community
